@@ -1,0 +1,87 @@
+/*******************************************
+Main
+*******************************************/
+
+body {
+    background: lightblue;
+}
+
+#instructions {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#name {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+#header {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    margin: 5px auto;
+}
+
+/*******************************************
+Scoreboard / Guesses
+*******************************************/
+#score {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 600px;
+    margin: 5px auto;
+}
+
+.underscore {
+    border: 4px dotted black;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    height: 80px;
+    width: 70%;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}
+.rightGuess {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 45%;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}
+.wrongGuess {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px;
+    text-align: center;
+    height: 100px;
+    width: 45%;
+    margin: 5px auto;
+    letter-spacing: 10px;
+}
+
+.wordwrap { 
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+ }
+
+/** 
+Google fonts
+
+font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'Jua', sans-serif;
+font-family: 'Permanent Marker', cursive;
+**/
+
+
