@@ -3,7 +3,12 @@ Main
 *******************************************/
 
 body {
-    background: lightblue;
+    background-image: url("../images/restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 45%;
+  
+    color:rgb(255, 255, 235);
 }
 
 #instructions {
@@ -40,7 +45,7 @@ Scoreboard / Guesses
 }
 
 .underscore {
-    border: 4px dotted black;
+    border: 4px dotted white;
     font-family: 'Jua', sans-serif;
     font-size: 40px;
     text-align: center;
