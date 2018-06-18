@@ -16,6 +16,7 @@ var randWord = food[randNum];
 
 
 function newGame() {
+    gameRunning = true;
     underScore = [];
     rightGuess = [];
     wrongGuess = [];
@@ -73,8 +74,11 @@ document.addEventListener('keypress', (event) => {
         if(underScore.join('') == randWord) {
             winScore ++;
             $( ".wins" ).text( winScore );
+            setTimeout(function(){ 
             alert('You Win');
             newGame(); 
+            }, 200);
+            
         }
     } 
 
@@ -84,8 +88,11 @@ document.addEventListener('keypress', (event) => {
         incCounter --;
         $( ".lives" ).text( incCounter );
         if(incCounter === 0) {
-            alert("You Lose");
-            newGame();    
+            setTimeout(function(){ 
+                alert("You Lose");
+                newGame();    
+                }, 200);
+           
         }
      };
     });
@@ -114,8 +121,10 @@ console.log(blankUnderscore());
             winScore ++;
             console.log (winScore);
             $( ".wins" ).text( winScore );
-            alert('You Win');
-            newGame(); 
+            setTimeout(function(){ 
+                alert('You Win');
+                newGame(); 
+                }, 200);
         }
     } 
     else {wrongGuess.push(keyWord);
@@ -123,8 +132,10 @@ console.log(blankUnderscore());
         incCounter += -1;
         $( ".lives" ).text( incCounter );
         if(incCounter === 0) {
-            alert("You Lose");
-            newGame();    
+            setTimeout(function(){ 
+                alert("You Lose");
+                newGame();    
+                }, 200);  
         }
      };
     ;}
